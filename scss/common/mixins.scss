@@ -1,0 +1,100 @@
+@mixin top-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+
+    color: #212529;
+}
+
+@mixin title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 120%;
+
+    text-align: center;
+
+    color: #212529;
+}
+
+@mixin сheckbox {
+
+    /* Скрыть оригинальный чекбокс */
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    /* Стилизация */
+    label {
+        display: inline-block;
+        position: relative;
+        padding-left: 32px;
+        margin-right: 15px;
+        cursor: pointer;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 117%;
+        color: #212529;
+    }
+
+    label::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        background: #FFFFFF;
+
+    }
+
+    label::after {
+        content: "\2714";
+        display: none;
+        position: absolute;
+        left: 4px;
+        top: 5px;
+        font-size: 20px;
+        color: #212529;
+    }
+
+    /* Стили при наведении */
+    label:hover::before {
+        // border-color: #666;
+    }
+
+    /* Стили при отмеченном чекбоксе */
+    input[type="checkbox"]:checked+label::after {
+        display: block;
+    }
+
+}
+
+@mixin two__title {
+    max-width: 452px;
+    display: flex;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 120%;
+    text-align: center;
+    color: #212529;
+}
+
+@mixin subtitle {
+    max-width: 326px;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    color: #212529;
+}

@@ -1,0 +1,45 @@
+.panel__shapka__dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+}
+.panel__shapka__dropdown a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+}
+.panel__shapka__dropdown a:hover {
+  background-color: #f2f2f2;
+}
+
+.panel__shapka__link--icon {
+  background: url("../image/Polygon 1.png");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: 92px;
+}
+
+#dropdown:hover .panel__shapka__dropdown {
+  display: block;
+}
+
+.panel__shapka__nav {
+  position: relative;
+}
+
+.panel__shapka__list {
+  display: inline-block;
+}
+
+.panel__shapka__link {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropbtn {
+  position: relative;
+}

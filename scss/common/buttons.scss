@@ -1,0 +1,68 @@
+// Кнопки
+.btn-red,
+.btn-red__duty,
+.btn-red__form__btn,
+.btn-red__form__quest,
+.footer__btn {
+    padding: 16px 25.5px;
+    background: $backgroundColorBtn;
+    border-radius: 5px;
+    max-width: 263px;
+    text-align: center;
+    font-family: $font-family;
+    font-weight: $semiBold;
+    font-size: $fontSize16;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #ffffff;
+    &:hover {
+        background-color: #C7495F;
+    }
+}
+
+.btn-red__form__btn {
+    padding: 16px 75px;
+    height: 51px;
+    max-width: 260px;
+}
+
+.btn-red__form__quest {
+    padding: 16px 179.5px;
+    height: 48px;
+    max-width: 260px;
+}
+
+.form__btn__quest {
+    display: flex;
+    justify-content: center;
+}
+
+.col__help__button__help {
+    padding: 18px 35.5px;
+}
+
+.footer__btn {
+    background: #EB5671;
+    margin-bottom: 32px;
+}
+
+.col__help__button__help {
+    padding: 16px 28px;
+    background: $backgroundColorBtn;
+    border-radius: 5px;
+    max-width: 300px;
+    text-align: center;
+    font-family: $font-family;
+    font-weight: $semiBold;
+    font-size: $fontSize16;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #ffffff;
+    &:hover {
+        background-color: #C7495F;
+        }
+}
+
+
+
+// /кнопки

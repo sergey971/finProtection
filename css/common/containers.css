@@ -1,0 +1,12 @@
+.container__shapka {
+  max-width: 1240px;
+  padding: 0px 15px;
+  margin: 0px auto;
+  margin-bottom: 92px;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}

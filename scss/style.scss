@@ -1,0 +1,632 @@
+@import "./common/variables.scss";
+@import "./common/mixins.scss";
+@import "./common/buttons.scss";
+@import "./common/dropdown.scss";
+@import "./common/containers.scss";
+// ============================
+
+.two__title {
+    @include two__title;
+}
+
+// =====================================
+.panel__shapka {
+    position: relative;
+    z-index: 99;
+    background-image: url("../image/image\ 44.png");
+    background-size: cover;
+    background-position: 0 0;
+
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__nav {
+        margin-left: 64px;
+        margin-right: 15px;
+    }
+
+    &__nav ul {
+        display: flex;
+        column-gap: $fontSize16;
+        margin-left: auto;
+    }
+
+    &__link {
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: $semiBold;
+        font-size: $fontSize12;
+        line-height: 133%;
+        color: $colorTitle;
+    }
+
+    &__phone {
+        display: flex;
+        flex-direction: column;
+        margin-right: 19px;
+    }
+
+    &__phone__item {
+        display: flex;
+    }
+
+    &__img {
+        width: 17px;
+        height: 10px;
+    }
+
+    &__phone__link {
+        font-family: $font-family;
+        font-weight: $semiBold;
+        font-size: $fontSize12;
+        line-height: 142%;
+        color: #2587F6;
+    }
+
+    &__button {
+        margin-left: auto;
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: $fontSize12;
+        line-height: 133%;
+        text-decoration-line: underline;
+        color: #EB5671;
+    }
+
+    &__btn {
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: $semiBold;
+        font-size: $fontSize16;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: $colorBtn;
+    }
+}
+
+
+.screen-1 {
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__desc {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        position: relative;
+        z-index: 1;
+        max-width: 660px;
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: $semiBold;
+        font-size: 40px;
+        line-height: 120%;
+        margin-bottom: 32px;
+        color: $colorTitle;
+    }
+
+    &__subtitle {
+        max-width: 560px;
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 100%;
+        margin-bottom: 32px;
+
+        color: $colorTitle;
+    }
+
+    &__link {
+        font-family: $font-family;
+        font-weight: $semiBold;
+        font-size: $fontSize16;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: $colorBtn;
+        text-align: center;
+    }
+
+    &__img {
+        position: relative;
+        z-index: -1;
+        right: 167px;
+    }
+}
+
+// ================================
+.screen-2 {
+    margin-bottom: 92px;
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        background: $backgroundForm;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        padding: 59px 45px 59px 45px;
+    }
+
+    .form__top {
+        display: flex;
+        gap: 31px;
+    }
+
+    .screen-2__title {
+        word-wrap: break-word;
+        margin-top: -10px;
+        max-width: 260px;
+        margin-right: 32px;
+        font-family: $font-family;
+        font-weight: $semiBold;
+        font-size: 30px;
+        line-height: 110%;
+        color: $colorTitle;
+
+    }
+
+    .form__input {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form__input__box {
+        margin-bottom: $fontSize16;
+
+        input[type="text"] {
+            padding: 16px 46px 16px 16px;
+            background-color: #ffff;
+            border-radius: 5px;
+        }
+
+        input::placeholder {
+            font-family: $font-family;
+            font-weight: 500;
+            font-size: $fontSize16;
+            line-height: 100%;
+            color: $colorTitle;
+        }
+
+        input:first-of-type {
+            margin-right: $fontSize16;
+        }
+    }
+
+    .form__btn {
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: $semiBold;
+        font-size: $fontSize16;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+    }
+
+    .form__check {
+        .form-check__label {
+            max-width: 520px;
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: 400;
+            font-size: $fontSize12;
+            line-height: 117%;
+            color: $colorTitle;
+
+            input[type="checkbox"] {
+                margin-right: 50px;
+            }
+        }
+
+        @include сheckbox;
+    }
+
+}
+
+// Преимущества
+.advantages {
+    margin-bottom: 184px;
+
+    &__title {
+        margin-bottom: 32px;
+    }
+
+    &__row {
+        display: flex;
+        gap: $fontSize16;
+    }
+
+    &__columns {
+        max-width: 292px;
+        padding: 45px 30px 63px 30px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+    }
+
+    &__columns:hover {
+        border: 1px solid #00AEEF;
+    }
+
+    .col {
+        column-gap: $fontSize16;
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 25%;
+
+        &__img {
+            margin-bottom: 24px;
+        }
+
+        &__title {
+            font-family: $font-family;
+            font-weight: $semiBold;
+            font-size: 24px;
+            line-height: 100%;
+            color: $colorTitle;
+            height: 48px;
+        }
+
+        &__text {
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: $colorTitle;
+            margin-top: $fontSize16;
+        }
+    }
+}
+
+// Помощь
+.help {
+    .col__img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    margin-bottom: 184px;
+
+    &__body {}
+
+    &__title {
+        margin-bottom: 32px;
+
+    }
+
+    &__col__row {
+        display: flex;
+    }
+
+    &__col__row__revers {
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+
+    &__col {
+        margin-bottom: 32px;
+    }
+
+    &__col__desc {
+        max-width: 605px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding: 45px 100px 25px 45px;
+    }
+
+    &__col__desc__revers {
+        max-width: 605px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        padding: 45px 100px 45px 45px;
+    }
+
+    &__col__desc__revers {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    &__col__title {
+        @include subtitle;
+
+    }
+
+    &__col__rf {
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: $colorTitle;
+        margin-bottom: $fontSize16;
+        opacity: 0.5;
+    }
+
+    &__col__desc__text {
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        margin-bottom: 32px;
+        color: $colorTitle;
+    }
+
+    &__col__service {
+        margin-bottom: 43px;
+    }
+
+    &__col__service__row {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__col__service__price {
+        display: flex;
+        gap: $fontSize16;
+    }
+
+    &__col__service__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__col__service__atten {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        color: $colorTitle;
+
+        opacity: 0.5;
+    }
+
+    &__col__service__mes {
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        color: $colorTitle;
+    }
+}
+
+.help__col__image {
+    height: 437px;
+
+}
+
+.help__col__image img {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.help__col__image__revers img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+// Гарантия
+
+.reliability {
+
+    margin-bottom: 76px;
+
+    &__row {
+        display: flex;
+        flex: 0 1 50%;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    &__col {
+        padding: 45px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        margin-bottom: $fontSize16;
+    }
+
+    &__col:nth-child(2n) {
+        margin-left: $fontSize16;
+    }
+
+    &__col__image {
+        margin-bottom: 24px;
+    }
+
+    &__col__title {
+        font-family: $font-family;
+        font-weight: $semiBold;
+        font-size: 24px;
+        line-height: 100%;
+        color: $colorTitle;
+        margin-bottom: $fontSize16;
+
+    }
+
+    &__col__text {
+        max-width: 500px;
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        color: $colorTitle;
+    }
+}
+
+// /Гарантия
+// Вопросы
+.quest {
+    margin-bottom: 92px;
+
+    &__body {
+        max-width: 855px;
+        background: $backgroundForm;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+
+    &__row {
+        display: flex;
+        gap: 45px;
+        align-items: start;
+        padding: 45px;
+    }
+
+    &__title {
+        max-width: 360px;
+        text-align: left;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .form__quest {
+        display: flex;
+        flex-direction: column;
+
+        @include сheckbox;
+
+        input[type="text"] {
+            padding: 16px 138px 16px 16px;
+            background-color: $color;
+            border-radius: 5px;
+            margin-bottom: $fontSize16;
+        }
+
+        input::placeholder {
+            font-family: $font-family;
+            font-weight: 500;
+            font-size: $fontSize16;
+            line-height: 100%;
+            color: $colorTitle;
+            margin-left: -12px;
+        }
+    }
+
+    .form-check__label__quest {
+        max-width: 328px;
+        margin-bottom: 24px;
+    }
+
+}
+
+// /Вопросы
+// Футер
+.footer {
+
+    &__body {
+        background: $backgroundForm;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    &__row {
+        padding: 45px 45px 0px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 90px;
+    }
+
+    &__item1__row {
+        display: flex;
+    }
+
+    &__item1__box1 {
+        max-width: 261px;
+        margin-right: 45px;
+
+    }
+
+    &__item1__box2 {
+        max-width: 261px;
+    }
+
+    &__item1__box1,
+    &__item1__box2 {
+        a {
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: 400;
+            font-size: $fontSize12;
+            line-height: 133%;
+            color: $colorTitle;
+        }
+
+        ul li:not(:last-child) {
+            margin-bottom: $fontSize16;
+        }
+
+        ul li:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__item2 {
+        display: flex;
+        flex-direction: column;
+
+        &__button {
+            font-family: $font-family;
+            font-weight: $semiBold;
+            font-size: $fontSize16;
+            line-height: 100%;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            padding: 16px 45px;
+        }
+    }
+
+    &__social a:not(:last-child) {
+        margin-right: $fontSize16;
+    }
+
+    &__distans {
+        padding: 0px 45px 45px 45px;
+    }
+
+    &__img {
+        margin-bottom: $fontSize16;
+    }
+
+    &__copy {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: $fontSize12;
+        line-height: 133%;
+        color: $colorTitle;
+    }
+
+    &__desc__row {
+        display: flex;
+    }
+
+    &__desc {
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: $fontSize12;
+        line-height: 133%;
+        color: $colorTitle;
+    }
+
+    &__desc:not(:last-child) {
+        margin-right: 24px;
+    }
+}
+
+// /Футер
